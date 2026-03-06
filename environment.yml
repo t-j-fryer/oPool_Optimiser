@@ -1,0 +1,14 @@
+name: opool-cloning
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - numpy=1.26.4
+  - pandas=2.2.3
+  - biopython=1.84
+  - networkx=3.4.2
+  - ipykernel=6.30.1
+  - jupyterlab=4.4.1
+  - pip:
+      - dnachisel==3.2.16
