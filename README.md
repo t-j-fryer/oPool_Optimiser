@@ -2,6 +2,8 @@
 
 Portable GitHub-ready version of `oPool_Cloning_Notebook.ipynb` with example inputs and reproducible Python/Jupyter kernel setup.
 
+For AI assistant handoff, settings, workflow conventions, and FAQ, see `AI_WORKFLOW_SUMMARY.md`.
+
 ## Repository Layout
 
 - `notebooks/oPool_Cloning_Notebook.ipynb`: main notebook (paths patched to be repo-relative)
