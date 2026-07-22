@@ -12,6 +12,9 @@ venv/
 # Jupyter
 .ipynb_checkpoints/
 
+# Local legacy notebook (intentionally not published)
+/notebooks/oPool_Cloning_Notebook.ipynb
+
 # Mac
 .DS_Store
 

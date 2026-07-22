@@ -1,6 +1,6 @@
 # AI Workflow Summary
 
-Last updated: 2026-03-06
+Last updated: 2026-07-22
 
 This file is a handoff guide for AI coding tools and new contributors working on `oPool_Optimiser`.
 
@@ -14,7 +14,10 @@ This file is a handoff guide for AI coding tools and new contributors working on
 
 ## Canonical Repo Layout
 
-- `notebooks/oPool_Cloning_Notebook.ipynb`: main end-to-end workflow.
+- `notebooks/oPool_Cloning_Notebook_Simple.ipynb`: primary one-input-cell notebook workflow.
+- `notebooks/oPool_Cloning_Notebook_Fast_Pool_Assignment.ipynb`: modular notebook with fast pool assignment.
+- `scripts/opool_cli.py`: command-line interface.
+- `scripts/opool_workflow.py`: shared CLI/simple-notebook implementation.
 - `data/AAseq_dTF001_dTF016.csv`: example amino acid input (renamed from original merged CSV).
 - `data/overhangs.csv`: example overhang inventory.
 - `data/orthogonal_oligos.csv`: example primer inventory.
@@ -27,7 +30,9 @@ This file is a handoff guide for AI coding tools and new contributors working on
 ```yaml
 project:
   name: oPool_Optimiser
-  notebook: notebooks/oPool_Cloning_Notebook.ipynb
+  notebook: notebooks/oPool_Cloning_Notebook_Simple.ipynb
+  fast_notebook: notebooks/oPool_Cloning_Notebook_Fast_Pool_Assignment.ipynb
+  cli: scripts/opool_cli.py
 runtime:
   python: "3.11"
   kernel_display_name: "Python 3 (opool-cloning)"
